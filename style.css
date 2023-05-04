@@ -3,30 +3,52 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* background-color: #fff0bec8; */
     background-color: rgba(248, 235, 225, 0.783);
+    overflow-x: hidden;
 }
 .title {
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Dancing Script', cursive;
-    padding: 20px 20px;
+    padding-left: 20px;
     color: rgb(172, 81, 16);
 }
 a {
     text-decoration: none;
 }
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: rgba(248, 209, 180, 0.783);
+    /* width:100%; */
+    padding:10px 20px;
+    border-radius: 15px;
+     margin: 10px 5px;
+}
+.flex{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.flex-column{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
 nav{
-    padding-left: 700px;
-    margin-bottom: 40px;
+   /* padding-top: 10px; */
+   margin-right: 45px;
 }
 nav a{
     padding: 10px 15px;
-    margin: 4px;
+    /* margin: 4px; */
     /* font-family: 'Cantarell', sans-serif; */
     font-family: 'Comme', sans-serif;
     color: rgb(172, 81, 16);
     border-radius: 10px;
     font-size: 20px;
+    font-weight: bold;
 }
 nav a:hover{
     color: whitesmoke;
@@ -41,7 +63,6 @@ nav a:hover{
 
 .img-container{
     padding: 10px;
-    margin-left: 450px;
 }
 .img-container img {
     width: 300px;
@@ -76,7 +97,6 @@ h1{
 /* social media icons styling */
 
 .socials{
-    margin-left: 520px;
     margin-top: 30px;
 }
 
@@ -110,16 +130,15 @@ h1{
 }
 
 .contact button {
-margin-left: 580px;
-margin-top: 30px;
-/* text-decoration: none; */
-font-family: 'Roboto', sans-serif;
-padding: 10px;
-border: none;
-border-radius: 10px;
-font-size: 20px;
-color: white;
-background-color: rgb(205, 120, 60);
+    margin-top: 30px;
+    /* text-decoration: none; */
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(205, 120, 60);
 }
 .contact a{
     color: white;
@@ -135,75 +154,82 @@ background-color: rgb(205, 120, 60);
 
 
 /* what I do section */
-
+.flex-container {
+    margin: 50px 0;
+}
+.WID-image img{
+    width: 500px;
+    height: 300px;
+    border-radius:20px ;
+    padding-left: 20px;
+}
 .job {
-    margin-top: 70px;
-    margin-left: 500px;
+    margin-top: 100px;
     font-family: 'Roboto', sans-serif;
     font-size: 45px;
-    padding-top: 40px;
     color:  rgb(172, 81, 16);
 }
 h3 {
     font-size: 30px;
-    /* padding: 10px; */
-    margin-left: 400px;
     color: rgb(172, 81, 16);
     font-family: 'Josefin Sans', sans-serif;
 }
 .stack-icons{
-    /* font-size: 70px; */
-    margin-left: 460px;
+ 
+    text-align: center;
+    padding-bottom: 10px;
 }
 .html-icon{
     font-size: 70px;
     color: rgb(248, 93, 36);
-    margin-right: 30px;
+    padding-right: 20px;
 }
 
 .css-icon{
     font-size: 70px;
     color: rgb(98, 98, 217);
-    margin-right: 30px;
+    /* margin-right: 30px; */
+    padding-right: 20px;
 }
 
 .git-icon{
     font-size: 70px;
     color: rgb(248, 93, 36);
-    margin-right: 30px;
+    padding-right: 20px;
 }
 
 .github-icon{
     font-size: 70px;
     color: black;
-    margin-right: 30px;
+    padding-right: 20px;
 }
 
 
 .job-description{
-    margin-left: 330px;
-    padding-top: 30px;
+    text-overflow: inherit;
+}
+.align{
+    display: flex;
+    padding-bottom: 15px;
 }
 
 .fa-bolt {
     color: rgb(250, 174, 33);
     font-size: 20px;
     padding: 8px;
-    /* border: black 1px solid; */
+    padding-left: 40px;
 }
 .job-description span {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: rgb(172, 81, 16);
 }
-.job-description div {
-    padding: 10px;
-}
+
 
 
 
 footer{
-    padding: 30px 50px;
+    padding: 30px 0;
     margin-top: 30px;
 }
 footer span {
@@ -211,7 +237,6 @@ footer span {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: bold;
-    padding-left: 500px;
 }
 
 
@@ -222,27 +247,25 @@ footer span {
 .project-card{
     background-color: rgb(229, 224, 224);
     border-radius: 20px;
-    padding: 20px;
-    margin-left: 260px;
+    padding: 20px 10px;
     width: 60%;
+    text-align:center;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.5)
 }
 .project-card h4{
     color: rgb(172, 81, 16);
     font-family: 'Roboto', sans-serif;
-    margin-left: 300px;
     font-size: 20px;
 }
 .project-card p{
     color: rgb(172, 81, 16);
     font-family: 'Roboto', sans-serif;
-    margin-left: 250px;
     font-size: 15px;
 }
 .project-card button{
     color: white;
     background-color: rgb(172, 81, 16);
     padding: 10px;
-    margin-left: 320px;
     border-radius: 10px;
     border: none;
     font-size: 15px;
@@ -253,4 +276,121 @@ footer span {
 }
 .project-card button a{
     color: white;
+}
+
+
+
+
+
+
+
+/* media query for tablet */
+
+@media(max-width:768px){
+    /* body{
+        overflow-x:hidden;
+    } */
+    .job {
+        font-size: 40px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    nav a {
+        font-size: 17px;
+    }
+    .img-container img{
+        width: 260px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    .name p{
+        font-size: 15px;
+        /* padding: 3px 100px; */
+    }
+    .socials i {
+        padding: 8px;
+        font-size: 24px;
+    }
+    .contact button{
+        font-size: 16px; 
+    }
+
+
+    .aboutMe{
+        flex-direction:column;
+    }
+    h3{
+        font-size: 23px;
+    }
+    .socials, .fa-brands{
+        font-size: 59px;
+        padding: 20px;
+    }   
+
+    .align .fa-bolt, .align span{
+        font-size: 18px;
+    }
+    
+    /* h1,h2,h3,h4{
+        text-align:center;
+    } */
+    /* .name p, header{
+        width:100%;
+    } */
+}
+
+
+
+
+
+/* media Query for mobile */
+@media(max-width:500px){
+   .title {
+    display: none;
+   }
+   header {
+    text-align: center;
+    padding: 28px;
+   }
+   .img-container{
+    margin-left: 30px;
+   }
+   .img-container img{
+    width: 195px;
+   }
+   h1{
+    font-size: 25px;
+   }
+   .name p{
+    font-size: 15px;
+    padding: 0px;
+   }
+   .WID-image img{
+    width: 340px;
+    height: 240px;
+   }
+   .socials, .fa-brands{
+    font-size: 48px;
+   }
+   .align .fa-bolt, .align span{
+    font-size: 16px;
+   }
+   .job {
+    font-size: 30px;
+    }
+    .project-card{
+        width: 50%;
+    }
+    .project-card h4{
+        font-size: 16px;
+    }
+    .project-card P{
+        font-size: 12px;
+    }
+    .project-card button{
+        font-size: 12px;
+    }
+
 }
